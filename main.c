@@ -61,7 +61,7 @@ int main() {
         fprintf(file, "Aqui el hijo 1 con pid %d, calculando la media parcial de pares\n", *process_id1);
 
         for(int i=0; i<70000000;i++){
-            if(i%2 == 0){// calcular coseno de raiz de pares
+            if(i%2 == 0){// calcular tangente de raiz de pares
                 tangentes += tan(sqrt(i));
             }
         }
@@ -78,7 +78,7 @@ int main() {
             fprintf(file, "Aqui el hijo 2 con pid %d, calculando la media parcial de impares\n", *process_id2);
 
             for(int i=0; i<70000000;i++){
-                if(i%2 == 1){// calcular coseno de raiz de impares
+                if(i%2 == 1){// calcular tangente de raiz de impares
                     tangentes += tan(sqrt(i));
                 }
             }
